@@ -59,7 +59,7 @@
       nav ul li a {
         display: inline-block;
         color: #fff;
-        padding: 0 10px;
+        padding: 10px;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
@@ -72,34 +72,15 @@
           position: relative;
           margin: auto;
       }
+      #mainTitle{
+	margin-left: 20px;
+      }
       a{
-          color: white;
           text-decoration: none;
       }
       a:hover{
         color: #ffdd00;
       }
-
-      .dashed-straight-border {
-        height: 8vh;
-        width: 25vw;
-        background: linear-gradient(90deg, white 50%, transparent 50%),
-                    linear-gradient(90deg, white 50%, transparent 50%), 
-                    linear-gradient(0deg, white 50%, transparent 50%), 
-                    linear-gradient(0deg, white 50%, transparent 50%);
-        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-        background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
-        background-position: 0vw 0vh, 26vw 10vh, 0vw 10vh, 26vw 0vh;
-        padding: 10px;
-        margin-left: 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-position 4s;
-        }
-        .dashed-straight-border:hover{
-            background-position: 26vw 0vh, 0vw 10vh, 0vw 0vh, 26vw 10vh;
-        }
         /* details tag styles */
         details{
             margin-bottom: 0.6em;
@@ -126,7 +107,7 @@
 <body>
     <main>
         <nav>
-            <h1 class="dashed-straight-border">Shann's Digital Bookmark</h1>
+            <h1 id="mainTitle">Shann's Digital Bookmark</h1>
             <ul>
                 <li><a href="#math">Math</a></li>
                 <li><a href="#physics">Physics</a></li>
@@ -140,68 +121,34 @@
             <p>
                 For collecting ideas and sharing them with myself and with others along the way.
             </p>
-            <strong>Topics</strong>
-            <ul>
-                <li>Math</li>
-                <li>Physics</li>
-                <li>Computer Science</li>
-                <li>History</li>
-                <li>Statistics</li>
-            </ul>
         </section>
-        <section id="math">
-            <h3>Math</h3>
-            <details>
-            <summary>April 6, 2022</summary>
-                <p>First update for the blog!</p> <p>Currently under development.</p>
-            </details>
-        </section>
-        <section id="physics">
-            <h3>Physics</h3>
-            <details>
-                <summary>April 6, 2022</summary>
-                    <p>First update for the blog!</p> <p>Currently under development.</p>
-                </details>
-        </section>
+        
         <section id="comsci">
             <h3>Computer Science</h3>
             <details>
                 <summary>References</summary>
-                <p>Notes to bonus articles: <a href="bonus-articles.pdf" download>Download here</a></p>
+                <p>Notes to Computer Architecture bonus articles: <a href="bonus-articles.pdf" download>Download here</a></p>
+		<p>Stash of Essential Books: <a href="https://drive.google.com/drive/folders/1Ryz-R3uCjPyviyEtVmsm1hrtJuuExh4a?usp=sharing">Google Drive</a> </p>
             </details>
-            <details>
-                <summary>April 7, 2022</summary>
-                <p> 
-                    I have been working with the JSON translations recently on Unciv,
-                    a free open-source 4X strategy game. Currently the Filipino language
-                    is available and for suprisingly shocking reasons. I believe it's 
-                    a great addition to the game in general. 
-                </p> 
-                <p>
-                    Sometimes, I still wonder if this blog setup is the right one.
-                    I have to set up a few quality of life changes here before 
-                    adding it to the new website rebranding. Mostly, this will be 
-                    for my own use but it's never bad to share to others.
-                </p>
-                </details>
-            <details>
-            <summary>April 6, 2022</summary>
+	    <details>
+		<summary>April 6, 2022</summary>
                 <p>First update for the blog!</p> <p>Currently under development.</p>
+	    </details>
+        </section>
+        <section id="math">
+            <h3>Math</h3>
+            <details>
+                <summary>References</summary>
+                <p>Notes and Books: <a href="https://drive.google.com/drive/folders/1DSLDqjbj0phL1qJEn5XShBFuJuWhz02t?usp=sharing" download>Download here</a></p>
             </details>
         </section>
-        <section id="history">
+	<section id="history">
             <h3>History</h3>
             <details>
-                <summary>April 6, 2022</summary>
-                    <p>First update for the blog!</p> <p>Currently under development.</p>
-                </details>
-        </section>
-        <section id="stat">
-            <h3>Statistics</h3>
-            <details>
-                <summary>April 6, 2022</summary>
-                    <p>First update for the blog!</p> <p>Currently under development.</p>
-                </details>
+                <summary>References</summary>
+                <p>Martial law readings: <a href="https://drive.google.com/drive/folders/1cZsQfWU81BmhEwAf1T-eQG3chRJz8tot?fbclid=IwAR3XOh1odRVzDfR06TOiuuhzOTEN3nGNj3WqtEXshZfgnGETQdotopk0uDY" download>Google Drive</a></p>
+            </details>
+            
         </section>
     </main>
 </body>
