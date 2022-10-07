@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <meta name="description" content="Find notes, books, and articles from all interesting fields of study
   on my own digital garden">
   <meta name="author" content="Shann Aurelle Ripalda">
@@ -31,6 +31,7 @@
           font-size: 1em;
           line-height: 1.618em;
           margin: none;
+	  padding: 1em;
       }
       /* navigation styles */
       nav{
@@ -38,7 +39,7 @@
         height: 10vh;
         background-color: #73C2FB; /**  Magic color I call maya! **/
         color: whitesmoke;
-        padding: 1em;
+	display: flex;
         position: sticky;
         overflow: hidden;
         top: 0;
@@ -47,12 +48,14 @@
       section{
           background-color: whitesmoke;
           color: black;
-          width: 92vw;
+          width: 94vw;
           position: relative;
           margin: auto;
       }
       #mainTitle{
-	margin-left: 1.5em;
+	  position: relative;
+	  margin: auto;
+	  font-size: 5vw;
       }
       a{
           text-decoration: none;
