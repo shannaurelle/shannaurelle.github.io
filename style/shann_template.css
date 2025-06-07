@@ -45,18 +45,9 @@ a:hover{
   details{
       margin-bottom: 0.6em;
   }
+  
   details summary{
       cursor: pointer;
       background: #bde0fd;
       padding: 1em;
-  }
-  details summary > * {
-      display: inline;
-  }
-  details[open] summary ~ * {
-      animation: sweep .5s linear forwards;
-  }
-  @keyframes sweep {
-      0%    {opacity: 0; margin-top: -10px}
-      100%  {opacity: 1; margin-top: 0px}
   }
